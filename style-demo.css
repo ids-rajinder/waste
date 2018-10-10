@@ -322,16 +322,15 @@ input[type="text"] {
     display: none;
 }
 .whitebox {
-    padding: 10px 0;
+    padding: 20px 15px;
     background-color: white;
     text-transform: uppercase;
     color: #111111;
     font-family: Montserrat, sans-serif;
     font-size: 18px;
     text-align: center;
-        margin: 0 5px 0 0 !important;
+    margin: 0 5px 0 0 !important;
     width: 400px !important;
-        height: 520px;
 }
 .fusion-title.fusion-sep-none {
      height: 110px;
@@ -452,6 +451,7 @@ a {
     text-align: center;
     line-height: 111%;
     color: #111111;
+    background-size:contain;
 }
 .pin {
     background-image: url(/wp-content/uploads/2018/06/pin.png);
@@ -469,7 +469,7 @@ a {
     font-weight: 600;
 }
 .eventtease  {
-      height: 80px !important;
+    height: 80px !important;
     color: white;
     font-weight: 300;
     font-size: 36px;
@@ -543,7 +543,7 @@ a {
     width: 100%;
 }
 .event_post_conteat{
-     margin: 80px 0 0 0 !important;
+     
 }
 .bigcaption {
     margin: 81px 0;
@@ -628,11 +628,12 @@ a {
   color: hsl(0, 0%, 100%) !important;
   display: inline-block;
   font-family: Source Sans Pro,sans-serif;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 100;
   padding: 20px 15px 20px 30px;
   text-decoration: none;
   width: 100%;
+  text-align: left;
 }
 .Weddings img {
   float: left;
@@ -738,6 +739,8 @@ ul.wedul {
 .fusion-footer .fusion-columns  > .fusion-column:nth-child(3), .fusion-footer .fusion-columns  > .fusion-column:nth-child(4){
 		margin-top: 50px;
 }
+
+
 .custom-html-widget .cities a{
     display: block;
 }
@@ -775,18 +778,6 @@ ul.wedul {
     margin-top: 40px;
 }
 
-/***.product-buttons a:first-child {
-    background: #2176ff;
-    color: #fff;
-    padding: 0 13px;
-    border-radius: 5px;
-}
-.product-buttons a:last-child {
-	background: #2176ff;
-    color: #fff;
-    padding: 0 35px;
-    border-radius: 5px;
-}****/
 .fusion-author .fusion-author-title, .fusion-modal .modal-title, .fusion-modal h3, .fusion-widget-area h3, .post-content h3, .project-content h3, .woocommerce-container .product-title, body #wrapper h2.woocommerce-loop-category__title, p.woocommerce-store-notice {
     font-size: 15px !important;
 }
@@ -892,9 +883,6 @@ tr.cart_item {
 	
 }
 
-@media (min-width:1000px){
-
-}
 
 
 @media screen and (min-width:320px) and (max-width:480px) {
@@ -944,14 +932,69 @@ tr.cart_item {
 		padding: 15px 0 0 0;
 	}
 	.bluemw{
-		    padding: 0 !important;
-    		margin: 0 auto;
-    		text-align: center;
-    		width: 100%;
-			border-bottom: 1px solid white;
-			border-right:none !important;
+		padding: 0 !important;
+    	margin: 0 auto;
+    	text-align: center;
+    	width: 100%;
+		border-bottom: 1px solid white;
+		border-right:none !important;
 	}
+
+    .bigcaption{
+        line-height: 35px !important;/********* all ready use ******/
+    }
+
+    .eventtease {
+        height:auto !important; /********* all ready use ******/
+        font-size: 16px;
+        word-break: break-all;
+        text-align: center;
+    }
+
+    .eventtease img {
+        height:auto !important; /********* all ready use ******/
+        max-width: 40px;
+    }
+
+    .mapcell b {
+        font-size: unset;
+    }
+    .event h4 {
+        text-align: center;
+    }
+    .Weddings img {
+        max-width: 40px;
+    }
+
+    .Weddings a {
+        font-size: 20px;
+    }
 }
+
+@media screen and (max-width:360px) {
+    .eventtease {
+        height:auto !important; /********* all ready use ******/
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .eventtease img {
+       display: none;
+    }
+
+    .event h4 {
+        font-size: 20px !important;/********* all ready use ******/
+        text-align: center;
+    }
+    .Weddings img {
+        max-width: 40px;
+    }
+
+    .Weddings a {
+        font-size: 16px;
+    }
+}
+
 @media screen and (min-width:481px) and (max-width:640px) {
 	.container{
 		width: 100% !important;
@@ -1007,6 +1050,19 @@ tr.cart_item {
 			border-bottom: 1px solid white;
 			border-right:none !important;
 	}
+    .eventtease {
+        height:auto !important; /********* all ready use ******/
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .eventtease img {
+        height:auto !important; /********* all ready use ******/
+    }
+    .event h4 {
+        text-align: center;
+    }
+
 	
 }
 @media screen and (min-width:641px) and (max-width:767px) {
@@ -1035,6 +1091,8 @@ tr.cart_item {
 	}
 	
 }
+
+
 @media screen and (min-width:768px) and (max-width:991px) {
 	 .container{
 		width: 100% !important;
@@ -1054,9 +1112,17 @@ tr.cart_item {
 	.product_list_widget{
 		padding:0;
 	}
-	 .any{
-    margin: 0 auto;
-    text-align: center;
+	.any{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .eventtease {
+        height:auto !important; /********* all ready use ******/
+        font-size: 22px;
+    }
+
+    .eventtease img {
+        height:auto !important; /********* all ready use ******/
     }
 	
 }
@@ -1092,6 +1158,7 @@ tr.cart_item {
 	.disaster img{
 		width:30% !important;
 	}
+
 }
 @media screen and (min-width:992px) and (max-width:1030px) {
 	.fusion-main-menu > ul > li {
@@ -1120,6 +1187,9 @@ tr.cart_item {
 	.socialbuttons{
 		padding-left: 10px !important;
 	}
+    .eventtease {
+        font-size: 28px;
+    }
 }
 @media screen and (min-width:1031px) and (max-width:1199px) {
 	.fusion-main-menu > ul > li {
@@ -1150,6 +1220,9 @@ tr.cart_item {
 	.socialbuttons{
 		padding-left: 10px !important;
 	}
+    .eventtease {
+        font-size: 28px;
+    }
 }
 @media screen and (min-width:1031px) and (max-width:1199px) and (orientation : landscape) {
  
@@ -1195,4 +1268,13 @@ tr.cart_item {
 .place_single_page .city_row, .city_row h4{
 font-weight: normal;
 font-size: 18px;
+}
+
+/*****************products sidebar css*************/
+ul.product_list_widget {
+    padding-inline-start: 0px;
+}
+
+p.ids-text {
+    line-height: 50px;
 }
