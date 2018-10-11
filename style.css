@@ -1272,7 +1272,7 @@ font-size: 18px;
 
 /*****************products sidebar css*************/
 ul.product_list_widget {
-    padding-inline-start: 0px;
+    padding-inline-start:0px;
 }
 
 p.ids-text {
